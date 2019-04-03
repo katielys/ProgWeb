@@ -1,11 +1,9 @@
 
- div {
+ p {
 
- 	border: 23px solid black;
-
- 	border-top-left-radius: 22px;
- 	border-top-right-radius: 22px;
- 	border-bottom-right-radius: 34px;
- 	border-bottom-left-radius: 22px;
+ 	 background-color: #AAAAAA;
+   border: 10px solid #000000;
+   border-radius: 10px 60px 10px 60px;
+   padding: 20px 70px
 
  }
