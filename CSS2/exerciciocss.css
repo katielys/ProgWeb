@@ -1,0 +1,30 @@
+div {
+
+   background-color: #AAAAAA;
+   border: 10px solid #cb42f4;
+   border-radius: 10px 60px 10px 60px;
+   padding: 20px 70px;
+   opacity: 0.5;
+   padding: 45px ;
+   position: relative; 
+   top: 100px;   
+   margin: 50px;   
+   box-sizing: border-box;
+  
+ }
+
+
+
+title{
+	background-color:  #b7a22c;
+}
+
+body {
+  background-image: url("bg.jpg");
+  width: 50%; 
+  background-color: #CCCC00;
+  
+  margin: 45px;
+
+
+}
