@@ -35,10 +35,9 @@ function updateBarsWidth(e) {
     }
 }
 
-let widthController = document.getElementById("bar_width");
+let widthController = document.getElementById("b");
 
-widthController.onkeyup = (e) => {
-    updateBarsWidth(widthController);
-}
 
+
+widthController.onclick =  updateBarsWidth
 updateBarsWidth(widthController);
