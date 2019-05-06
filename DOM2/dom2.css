@@ -1,0 +1,13 @@
+.bar {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    float: left;
+    bottom: 0px;
+    position: absolute;
+}
+
+input {
+    border: solid;
+    background-color: antiquewhite;
+}

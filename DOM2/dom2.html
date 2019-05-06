@@ -1,35 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src='dom2.js'></script>
-    <title>DOM2</title>
-</head>
-<body>
-    <h1>Um grafico de Barras</h1>
-    <form action="">
-        <label for=""> ALTURA DAS BARRAS</label>
-        <div>
-            <input type="number" id="b1">
-            <input type="number" id= "b2">
-            <input type="number" id ="b3">
-            <input type="number" name="" id="b4">
-            <input type="number" id ="b5">
-        </div>
-        <label for="">LARGURA DAS BARRAS</label>
-        <input type="text" id="altura">
-    </form>
-   
-    <button onclick="desenhar()"> Draw</button>
+<html>
 
-    <div id="graph">
-        <div class="barra"></div>
-        <div class="barra"></div>
-        <div class="barra"></div>
-        <div class="barra"></div>
-        <div class="barra"></div>
+<head>
+    <meta charset="utf-8" />
+   <link rel='stylesheet' type='text/css' media='screen' href='dom2.css'>
+   <script src='dom2.js'></script>
+</head>
+
+
+
+<body>
+    Altura das Barras:
+    <input type="text" id="bar1_height" />
+    <input type="text" id="bar2_height" />
+    <input type="text" id="bar3_height" />
+    <input type="text" id="bar4_height" />
+    <br> Largura das Barras:
+    <input type="text" id="bar_width" value="20"/>
+    <br>
+
+    <div style="position: relative; width: 100%; height: 50%">
+        <div class="bar" id="bar1" xindex="1"></div>
+        <div class="bar" id="bar2" xindex="2"></div>
+        <div class="bar" id="bar3" xindex="3"></div>
+        <div class="bar" id="bar4" xindex="4"></div>
     </div>
 </body>
+
 </html>
