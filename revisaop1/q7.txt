@@ -1,0 +1,4 @@
+R= Unidades relativas são medudas en relação ao tamanho de outros elementos da página.
+O unidade absoluta são medidas to tamanho real como por exemplo cm.
+
+Em é uma unidade relativa e é usada em relação ao tamanho da fonte do elemento.
