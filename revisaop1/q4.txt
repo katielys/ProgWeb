@@ -1,0 +1,3 @@
+R=  Caracteres Especiais são caracteres que não podem ser 
+apresentados em um browser a não ser artraves dessas referencias
+Os codigos podem ser abreviações, hexadecimas e decimais
