@@ -1,0 +1,9 @@
+A diferença entre == e === é que == compara apena os valores das variáveis, enquanto === compara os valores e os tipos de valores
+
+Exemplo:
+
+var a = 1;
+
+a=='1';//true
+
+a==='1'//false
