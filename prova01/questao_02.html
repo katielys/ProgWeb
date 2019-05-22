@@ -7,13 +7,28 @@
     <title>Lei Turca</title>
 </head>
 <body>
-    <input type="text" onkeydown="Q"> 
+    <input type="text" id="turco">
     <script>
-        function turco(){
-            var x = event.
-        }
-        console.log("aaaaaaaaa");
-    </script>
+        node = document.getElementById("turco");
+        node.addEventListener("keydown", function(event) {
+    if (event.key === "q" || event.key ==="Q") {
+        event.preventDefault();
+       
+    }
 
+    if (event.key === "W" || event.key ==="w") {
+        event.preventDefault();
+       
+    }
+
+
+    if (event.key === "x" || event.key ==="X") {
+        event.preventDefault();
+       
+    }
+});
+    
+        
+    </script>
 </body>
 </html>
