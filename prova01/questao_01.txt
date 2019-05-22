@@ -1,0 +1,15 @@
+Na linha 4 existe o erro que a tag comment não existe. Para comentar utiliza-se <!-- insira o comentario entre -->
+ Corrigido: 
+
+04 <!-- Isto é um comentário, não deve aparecer na página</comment -->
+
+Na linha 14 não há presença da tag body. Para corrigir coloca -se a tag <body> logo depois do </head> e fecha-se antes do HTML
+
+
+Na linha 17 a tag do seletor  ( <span >)é aberto mas não é fechado . Para corrigir é necessário fechar
+
+Na linha 10, o atributo do css width está incorreto pois width deveria  estar dentro do colchete.  Corrigindo:
+
+    #para {
+     width: 400px;
+    }
