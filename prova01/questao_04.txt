@@ -1,1 +1,2 @@
-Hoisting consiste em adiantar situações
+Hoisting consiste em adiantar situações  sejam valor de variaveis , resultado de funcoes
+

@@ -41,3 +41,12 @@ venda2 = new Venda("minhaVenda2",100,23);
 
 console.log(venda1.getValorTotal())
 console.log(venda2.getValorTotal())
+
+function c(){
+var c = 1;
+function a(){
+    console.log(c);
+   return 2; 
+}
+}
+c();
