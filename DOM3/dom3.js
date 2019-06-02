@@ -1,19 +1,15 @@
 
-function handleMouseOver(e){
-    e.target.style.background='black';
-    e.target.style.color='white';
-   }
+var cont = 0
+addEventListener("mousemove", function(event) {
+    var dot = document.createElement("div");
+    dot.className = "dot";
+    dot.style.left = (event.pageX - 4) + "px";
+    dot.style.top = (event.pageY - 4) + "px";
+    document.body.appendChild(dot);
+    cont++;
 
-   var canvas = document.getElementById('myCanvas');
-var context = canvas.getContext('2d');
-
-//invoking the object
-var cir = new circle(30, 30, 15, '#000FFF');
-
-function circle(x, y, radius, color){
-  context.beginPath();
-  context.arc(x, y, radius, 0, Math.PI*2);
-  context.fillStyle = color;
-  context.fill();
-  context.closePath();
-}
+    if (cont >8){
+        var oP = document.body.getElementsByTagName("div")[0];
+        document.body.removeChild(oP);
+    }
+});
