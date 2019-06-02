@@ -13,15 +13,6 @@
     bottom: 0px;
 }
 
-.dino {
-    width: 45px;
-    height: 45px;
-    background-image: url(sprites.png);
-    background-position-y: -3px;
-    position: absolute;
-    z-index: 2;
-}
-
 .nuvem {
     width: 47px;
     height: 17px;
@@ -30,12 +21,78 @@
     position: absolute;
     z-index: 1;
 }
-
-.cacto{
-    width: 24px;
-    height: 50px;
+.dino {
+    width: 45px;
+    height: 46px;
     background-image: url(sprites.png);
-    background-position: 334px 21px;
+    background-position-y: -3px;
     position: absolute;
-    z-index: 4;
+    z-index: 2;
+}
+
+.passarinho{
+    position: absolute;
+    height: 34px;
+    width: 46px;
+    background-image: url(sprites.png);
+    z-index: 3;
+}
+
+.pontuacao {
+    position: absolute;
+    right: 15px;
+    z-index: 10;
+}
+.pontuacaoMaxima {
+    position: absolute;
+    right: 80px;
+    z-index: 10;
+}
+
+.pontos {
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    background-image: url(sprites.png);
+}
+
+.gameOver{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 666;
+}
+
+.textGameOver{
+    background-image: url(sprites.png);
+    background-position-x: -484px;
+    background-position-y: -15px;
+    height: 11px;
+    width: 191px;
+    z-index: 60;
+}
+.btnRestart{
+    background-image: url(sprites.png);
+    background-position-x: -2px;
+    background-position-y: -2px;
+    height: 32px;
+    width: 36px;
+    margin-top: 15px;
+    z-index: 60;
+}
+
+.gCacto {
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    z-index: 3;
+}
+
+.cacto {
+    background-image: url(sprites.png);
+    height: 47px;
+    width: 24px;
 }
