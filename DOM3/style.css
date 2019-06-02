@@ -1,13 +1,7 @@
-div{
-    background-color: darkkhaki
-
-}
-
-.circle{
-    background-color: blueviolet
-    
-}
-
-canvas{
-    background-color: thistle
+body {
+    height: 200px; background: beige;
+    }
+.dot {
+height: 8px; width: 8px; border-radius: 4px;
+background: blue; position: absolute;
 }
