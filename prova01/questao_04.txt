@@ -1,2 +1,5 @@
+David: Definição de hoisting incompleta. Código de exemplo não apresentado.
+Nota: 0.5
+
 Hoisting consiste em adiantar situações  sejam valor de variaveis , resultado de funcoes
 

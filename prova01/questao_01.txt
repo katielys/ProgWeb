@@ -1,3 +1,6 @@
+David: Todos os erros foram reportados corretamente
+Nota: 2.0
+
 Na linha 4 existe o erro que a tag comment não existe. Para comentar utiliza-se <!-- insira o comentario entre -->
  Corrigido: 
 
