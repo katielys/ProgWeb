@@ -1,0 +1,12 @@
+[id='trex'] {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+@media (max-width: 540px) {
+  [id='trex'] br {
+    display: none;
+  }
+  [id='trex'] .mobile-spacer {
+    display: inline;
+  }
+}
