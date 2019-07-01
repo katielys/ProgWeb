@@ -5,22 +5,49 @@
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
+
 module.exports = {
-  index: async function(req,res){
-      res.view('pages/curso/index');
-  },
+    index: async (req, res) => {
+        let cursos = await Curso.find()
 
-    
-  create: async function(req,res){},
-
-  read: async function(req,res){
-      //var cursoId = req.param('cursoId');
+        res.view('pages/curso/index', {
+            title: 'Curso', cursos
+        })
     },
 
-  update: async function(req,res){},
+    create: async (req, res) => {
+        try {
+            let { nome, sigla, descricao } = req.body
+            let newCurso = { nome, sigla, descricao }
+            let newCursoOk = await Curso.create(newCurso)
+            res.redirect('/curso')
+        } catch (err) {
+            console.log('deu erro')
+            res.send('Erro ao cadastrar curso')
+        }
+    },
 
-  delete: async function(req,res){},
+    read: async (req, res) => { },
+    update: async (req, res) => {
 
+        try {
+            let { id, nome, sigla, descricao } = req.body
+            let updateCurso = { nome, sigla, descricao }
+            let cursoUpdate = await Curso.updateOne({ id }).set(updateCurso)
+            res.redirect('/curso')
+        } catch (err) {
+            console.log(err)
+            res.send(err)
+        }
 
+    },
+    delete: async (req, res) => {
+        try {
+            let id = req.param('id')
+            let eraseOk = await Curso.destroyOne({ id })
+            res.redirect('/curso')
+        } catch (err) {
+            res.send(err)
+        }
+    },
 };
-
