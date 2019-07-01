@@ -32,7 +32,13 @@ module.exports.routes = {
   'GET /account':            { action: 'account/view-account-overview' },
   'GET /account/password':   { action: 'account/view-edit-password' },
   'GET /account/profile':    { action: 'account/view-edit-profile' },
-  'GET /sobre':             {  action : 'view-sobre'}, 
+  'GET /sobre':               {  action : 'view-sobre'}, 
+  'GET /curso' :              { action:'curso/index'},
+  'GET /curso/read/:cursoId' :   {action:'curso/read'},
+  'GET /curso/create' :        {action:'curso/create'},
+  'GET /curso/update/:cursoId' :    {action:'curso/update'},
+  'GET /curso/delete/:cursoId' :             {action:'curso/delete'},
+
 
 
   //  ╔╦╗╦╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╦═╗╔═╗╔═╗╔╦╗╔═╗   ┬   ╔╦╗╔═╗╦ ╦╔╗╔╦  ╔═╗╔═╗╔╦╗╔═╗
