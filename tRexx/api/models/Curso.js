@@ -20,6 +20,10 @@ module.exports = {
             type:'string'
 
         },
-
+        
+       users:{
+           collection:'User',
+           via: 'curso'
+       }
     },
 }

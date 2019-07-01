@@ -17,6 +17,12 @@ module.exports = {
             type:'number',
             required:true
           },
+
+          user:{
+            model:'User',
+          },
+
     },
+
 
 }

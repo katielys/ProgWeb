@@ -6,14 +6,16 @@
  */
 
 module.exports = {
-  index: async function(req,res){},
+  index: async function(req,res){
+      res.view('pages/curso/index');
+  },
 
+    
   create: async function(req,res){},
 
   read: async function(req,res){
-      var cursoId = req.param('cursoId');
-      res.end(cursoId);
-  },
+      //var cursoId = req.param('cursoId');
+    },
 
   update: async function(req,res){},
 
