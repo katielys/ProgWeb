@@ -343,10 +343,11 @@
         $.ajax({
 
             url: 'pontuacao',
-            type: 'POST',
+            method: 'POST',
             data: {
-                'pontuacao' :pontos,
-                '_crsf' : document.getElementById('_crsf').value
+                '_csrf' : document.getElementById('_csrf').value,
+                'pontuacao' :pontos.toString(),
+               
             },
 
             error: function (xhr,start,error){
