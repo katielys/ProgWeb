@@ -16,7 +16,7 @@ module.exports = {
         await Jogada.create({
             pontuacao: req.body.pontuacao,
             jogador: req.me.id,
-            data: Date.name().toString()
+            data: Date.now().toString()
         });
         res.end('Pontuacao salva');
     }
