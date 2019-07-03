@@ -15,6 +15,7 @@ module.exports.routes = {
   //  ╚╩╝╚═╝╚═╝╩  ╩ ╩╚═╝╚═╝╚═╝
   'GET /':                   { action: 'game/trex' },
   'POST /pontuacao'        : {action :'game/pontuacao'}, 
+  'GET /ranking' :            {action:'game/ranking'},
   'GET /welcome/:unused?':   { action: 'dashboard/view-welcome' },
   'GET /account/curso' :     {action :'account/selecionar-curso'},
   'POST /account/curso' :     {action :'account/selecionar-curso'},

@@ -21,9 +21,8 @@ module.exports = {
 
         },
         
-       users:{
-           collection:'User',
-           via: 'curso'
-       }
+        user: {
+            model: 'User'
+          }
     },
 }

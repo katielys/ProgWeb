@@ -18,10 +18,9 @@ module.exports = {
             required:true
           },
 
-          user:{
-            model:'User',
-          },
-
+          user: {
+            model: 'User'
+          }
     },
 
 

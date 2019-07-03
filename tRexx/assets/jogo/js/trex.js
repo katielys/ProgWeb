@@ -99,7 +99,7 @@
         this.cactos = [];
 
         this.redefinirGrupo();
-        this.element.style.right = (Math.random() * window.innerWidth + 200) * -1 + 'px';
+        this.element.style.right = (Math.random() * window.innerWidth + 199) * -1 + 'px';
         deserto.element.appendChild(this.element);
     }
 
@@ -128,7 +128,7 @@
 
     }
     Cacto.prototype.mover = function () {
-        if (parseInt(this.element.style.right) > window.innerWidth + 100) {
+        if (parseInt(this.element.style.right) > window.innerWidth + 99) {
             this.element.style.right = '-500px'
             this.redefinirGrupo()
         }

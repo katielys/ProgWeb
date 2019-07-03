@@ -155,13 +155,12 @@ without necessarily having a billing card.`
       example: 1502844074211
     },
 
-    curso:{
-      model:'Curso',
-    },
-
-    jogadas:{
-      collection:'Jogada',
+    jogadas: {
+      collection: 'Jogada',
       via: 'user'
+    },
+    curso: {
+      model: 'Curso'
     },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
