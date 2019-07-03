@@ -9,6 +9,14 @@ module.exports = {
   
     trex: async function (req, res){
         res.view('pages/game');
+    },
+
+    pontuacao: async function (req,res){
+        await Jogada.create({
+            pontuacao: req.body.pontuacao,
+            jogador: req.me.id
+        });
+        res.end('Pontuacao salva');
     }
 };
 

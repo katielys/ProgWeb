@@ -339,7 +339,26 @@
     }
 
     function restart() {
+      
+        $.ajax({
 
+            url: 'pontuacao',
+            type: 'POST',
+            data: {
+                'pontuacao' :pontos,
+                '_crsf' : document.getElementById('_crsf').value
+            },
+
+            error: function (xhr,start,error){
+              
+                console.log(error)
+            },
+
+            success: function (data){
+                
+            }
+
+        });
         dGameOver.removeChild(dRestart);
         dGameOver.removeChild(dText);
         deserto.element.removeChild(dGameOver);
@@ -365,6 +384,8 @@
         init();
     }
     function gameOver() {
+
+       
         clearInterval(gameLoop);
         clearInterval(passarinhos.movendo);
         passarinhos.forEach(function (n) {
@@ -386,13 +407,13 @@
     }
     function colidiuC(A, B) {
         //((A.left + 6)>= (B.left ) && ( (B.top+50) <= (A.top))) ||
-        if ((A.left + 6) >= (B.left) && ((B.top) <= (A.top + 3))) {
+        if ((A.left + 5) >= (B.left) && ((B.top) <= (A.top + 3))) {
             gameOver();
         }
     }
 
     function colidiuP(A, B) {
-        if ((A.left + 20) >= (B.left) && ((A.top) >= (B.top - 30))) {
+        if ((A.left + 20) >= (B.left) && ((A.top) >= (B.top - 25))) {
             gameOver();
         }
     }
